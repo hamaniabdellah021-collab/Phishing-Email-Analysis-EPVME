@@ -10,6 +10,9 @@ Content-Transfer-Encoding: quoted-printable
 
 
 --------------ms070603080509030002050105
+
+```
+
 ### Step 2: Displaying a Fraudulent Advertisement or Content as an Image
 What it does: Instead of using text that email filters can easily read, the attacker embeds an image in the email containing the advertisement or phishing content, which is displayed to the user when they open the email.
 
@@ -24,6 +27,9 @@ Plaintext
 Content-Type: image/jpeg;
 	name="p.jpg"
 Content-Transfer-Encoding: base64
+
+
+
 Content-ID: <000301c634d3$5e87f4f0$aa0fa8c0@sanya>
 ###   Step 3: Redirecting the User to a Malicious Website When They Click
 What it does: The entire image is made into a clickable link, so clicking anywhere on the image redirects the user directly to the attacker's website.
@@ -34,6 +40,8 @@ HTML
 <A href="[http://fmnpel.nitroshaitan.com/?55269245](http://fmnpel.nitroshaitan.com/?55269245)">
     <IMG align="baseline" alt border="0" src="cid:000301c634d3$5e87f4f0$aa0fa8c0@sanya">
 </A>
+
+
 ###    Step 4: Tracking the Victim and Confirming Message Delivery
 What it does: The attacker attempts to determine whether the email address is active and identify users who clicked the link, allowing them to potentially target those users in future campaigns.
 
